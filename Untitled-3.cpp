@@ -7,11 +7,34 @@ using namespace atcoder;
 using ll = long long;
 using mint1 = modint1000000007;
 using mint2 = modint998244353;
-double pi=3.141592653589793;
-const long long inf=2*1e9;
-const long long linf=8*1e18;
-template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return 1; } return 0; }
-
-int main() {
-    
+double pi = 3.141592653589793;
+const long long inf = 2 * 1e9;
+const long long linf = 8 * 1e18;
+template <class T>
+inline bool chmax(T &a, T b)
+{
+    if (a < b)
+    {
+        a = b;
+        return 1;
+    }
+    return 0;
 }
+
+int main()
+{
+    ll N, D;
+
+    int main()
+    {
+        ll N, U, V;
+        cin >> N >> U >> V;
+        vector<vector<ll>> G(N);
+        rep(i, 0, N)
+        {
+            ll A, B;
+            cin >> A >> B;
+            A--;
+            B--;
+        }
+    }
