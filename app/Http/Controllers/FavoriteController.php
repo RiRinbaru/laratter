@@ -30,7 +30,7 @@ class FavoriteController extends Controller
     public function store(Tweet $tweet)
     {
         $tweet->users()->attach(Auth::id());
-        return redirect()->route('tweet.index');
+        return redirect()->back();
     }
 
     /**
@@ -63,6 +63,6 @@ class FavoriteController extends Controller
     public function destroy(Tweet $tweet)
     {
         $tweet->users()->detach(Auth::id());
-        return redirect()->route('tweet.index');
+        return redirect()->back();
     }
 }
